@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Expandindo o Reino</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Instituto Expandindo o Reino</h1>
+
+        <button class="menu-toggle"
+                aria-label="Abrir menu"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="menu">
+
+            <a href="#inicio">Início</a>
+
+            <div class="dropdown">
+                <button class="dropdown-toggle">
+                    Projetos ▾
+                </button>
+
+                <div class="dropdown-menu">
+                    <a href="#projetos">Nossos Projetos</a>
+                    <a href="#projetos">Ações Sociais</a>
+                    <a href="#voluntariado">Voluntariado</a>
+                </div>
+            </div>
+
+            <a href="#cadastro">Cadastro</a>
+
+        </nav>
+    </header>
+
+    <main id="app">
+
+    <section>
+        <h2>Apresentação</h2>
+
+        <p>
+            O Instituto Expandindo o Reino é uma organização
+            voltada para ações sociais e projetos que buscam
+            contribuir para a comunidade.
+        </p>
+    </section>
+
+    <section>
+        <h2>Quem Somos</h2>
+
+        <p>
+            Somos uma instituição que desenvolve iniciativas
+            sociais e busca envolver pessoas interessadas
+            em contribuir com diferentes ações comunitárias.
+        </p>
+    </section>
+
+    <section>
+        <h2>Nossa Missão</h2>
+
+        <p>
+            Nossa missão é promover ações que contribuam para
+            o bem-estar da comunidade, incentivando a
+            solidariedade, a participação e o voluntariado.
+        </p>
+    </section>
+
+    <section>
+        <h2>Contato</h2>
+
+        <p>Telefone: (96) 99999-9999</p>
+        <p>E-mail: contato@instituto.org</p>
+    </section>
+
+    <section class="feedback">
+
+        <h2>Componentes de Feedback</h2>
+
+        <h3>Badges</h3>
+
+        <p>
+            <span class="badge badge-projeto">
+                Projeto social
+            </span>
+
+            <span class="badge badge-voluntariado">
+                Voluntariado
+            </span>
+
+            <span class="badge badge-pendente">
+                Pendente
+            </span>
+        </p>
+
+        <h3>Alertas</h3>
+
+        <div class="alerta alerta-sucesso">
+            Cadastro realizado com sucesso!
+        </div>
+
+        <div class="alerta alerta-info">
+            Novas oportunidades de voluntariado estão disponíveis.
+        </div>
+
+        <div class="alerta alerta-erro">
+            Não foi possível concluir a solicitação.
+        </div>
+
+    </section>
+
+</main>
+
+    <!-- TOAST -->
+
+    <div class="toast">
+        Sua inscrição foi recebida com sucesso.
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal">
+
+        <div class="modal-conteudo">
+
+            <button type="button"
+                    class="modal-fechar"
+                    aria-label="Fechar"
+                    onclick="document.querySelector('.modal').style.display='none'">
+                    ×
+            </button>
+
+            <h2>Informação</h2>
+
+            <p>
+                Obrigado por contribuir com o
+                Instituto Expandindo o Reino.
+            </p>
+
+            <button type="button"
+                    class="modal-continuar"
+                    onclick="document.querySelector('.modal').style.display='none'">
+                 Continuar
+           </button>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <p>Instituto Expandindo o Reino</p>
+        <p>2026</p>
+
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
